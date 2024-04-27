@@ -57,6 +57,7 @@ module BestInPlace
       end
 
       options[:data]['bip-confirm'] = opts[:confirm].presence
+      options[:data]['bip-confirmation'] = opts[:confirmation] if opts[:confirmation].present?
       options[:data]['bip-value'] = html_escape(value).presence
 
       if opts[:raw]
